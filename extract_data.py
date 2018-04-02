@@ -137,9 +137,9 @@ for d in dir:
             temp_return = CollapseMarkers(tagged_sentences)
             if d=="test/": test+=temp_return
             else: train+=temp_return
-            print file_txt
-print len(test)
-print len(train)
+            print(file_txt)
+print(len(test))
+print(len(train))
 #print train[0]
 import pickle
 with open('ProcessBank_train.p', 'wb') as handle:
